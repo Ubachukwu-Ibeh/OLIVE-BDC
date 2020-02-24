@@ -1,0 +1,303 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: box;
+    src: url(../fonts/Monserrat/Montserrat-SemiBold.otf);
+}
+
+@font-face {
+    font-family: box4;
+    src: url(../fonts/Monserrat/Montserrat-Regular.otf);
+}
+
+@font-face {
+    font-family: box1;
+    src: url(../fonts/Monserrat/Montserrat-Medium.otf);
+}
+
+@font-face {
+    font-family: box2;
+    src: url(../fonts/Monserrat/Montserrat-Bold.otf);
+}
+
+@font-face {
+    font-family: box3;
+    src: url(../fonts/Monserrat/Montserrat-ExtraBold.otf);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav {
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.445);
+    position: fixed;
+}
+
+.logo {
+    width: 250px;
+    height: 100%;
+    background-color: #fff;
+    background-image: url(../img/olive-logo-redesign_0000_BUREAU-DE-CHANGE.png);
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.nav-links-div {
+    margin: auto;
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    margin-right: 2%;
+
+    a {
+        font-size: 10pt;
+        font-family: box;
+        color: #4d4d4d;
+        text-decoration: none;
+        transition: 0.2s;
+
+        span {
+            color: #ffcc00;
+        }
+
+        &:hover {
+            color: #ffcc00;
+        }
+    }
+
+}
+
+.yellow-bar {
+    margin-top: 100px;
+    width: 100%;
+    height: 50px;
+    background-color: #ffcc00;
+}
+
+.pics {
+    width: 100%;
+    height: 60vh;
+    background-image: url(../img/banner.jpg), linear-gradient(to right, rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.4), rgba(255, 255, 255, 0));
+    background-color: #4d4d4d;
+    background-blend-mode: overlay;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    border-bottom: solid #ffcc00 3px;
+}
+
+.get-forex {
+    width: 40%;
+    margin: auto;
+    margin-left: 3%;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.get-note {
+    color: #fff;
+    font-family: box2;
+    font-size: 22pt;
+}
+
+.get-button {
+    margin-top: 30px;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    padding: 20px 55px;
+    background-color: #ffcc00;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.445);
+    transition: 0.2s ease;
+
+    &:hover {
+        transform: scale(0.9);
+    }
+
+    p {
+        margin: auto;
+        color: #fff;
+        font-family: box2;
+        font-size: 16pt;
+    }
+}
+
+.current-ll {
+    margin: auto;
+    margin-top: 70px;
+    border-bottom: #ffcc00 3px solid;
+    text-align: center;
+
+    p {
+        font-family: box3;
+        font-size: 18pt;
+        margin-bottom: 5px;
+    }
+}
+
+.rate-cards-main {
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.card {
+    display: flex;
+    width: 350px;
+    height: 300px;
+    background-color: #fff;
+    margin: 20px;
+    box-shadow: 0px 3px 8px rgba(151, 86, 43, 0.445);
+}
+
+.card-content {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}
+
+.us-heading {
+    margin: auto;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    margin-bottom: 20px;
+}
+
+.us {
+    font-family: box2;
+}
+
+.us-flag {
+    margin-left: 20px;
+    width: 40px;
+    height: 21px;
+    background-image: url(../img/0_o0-6o1W1DKmI5LbX.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.pound-flag,
+.euro-flag {
+    @extend .us-flag;
+}
+
+.pound-flag {
+    background-image: url(../img/england.png);
+}
+
+.euro-flag {
+    background-image: url(../img/images.png);
+}
+
+.buy-us {
+    margin-top: 5px;
+    font-family: box1;
+    font-weight: bolder;
+}
+
+.price {
+    margin-top: 5px;
+    margin-left: 5px;
+    font-family: box1;
+    font-weight: normal;
+}
+
+.about-us {
+    box-shadow: 0px 3px 8px rgba(151, 86, 43, 0.445);
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 50px;
+}
+
+.yellow-box {
+    background-color: #ffcc00;
+    width: 100%;
+    height: 50px;
+}
+
+.about-txt-cont {
+    margin: auto;
+    width: 95%;
+    text-align: left;
+
+    h2 {
+        font-size: 24pt;
+        font-family: box1;
+        color: #4d4d4d;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-family: serif;
+        font-family: box4;
+        color: #4d4d4d;
+    }
+}
+
+.subscribe {
+    height: 150px;
+    background-color: #4d4d4d;
+    display: flex;
+    margin-bottom: 100px;
+    color: #fff;
+    flex-wrap: wrap;
+    padding: 20px;
+
+    h2 {
+        margin-bottom: 20px;
+        font-family: box2;
+        font-size: 20pt;
+    }
+
+    p {
+        font-family: box4;
+        font-size: 10pt;
+    }
+}
+
+.sub-txt {
+    margin: auto;
+}
+
+.newsletter-form {
+    display: flex;
+}
+
+.sub-mail-main {
+    margin: auto;
+
+    button {
+        padding: 20px 40px;
+        border: none;
+        background-color: #ffcc00;
+    }
+}
+
+.sub-mail {
+    border: none;
+    padding: 20px 60px;
+    outline: none;
+}
+
+.footer {
+    background-color: #ddd;
+    height: 250px;
+}
