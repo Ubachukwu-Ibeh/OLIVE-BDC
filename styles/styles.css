@@ -28,6 +28,10 @@
   src: url(../fonts/Monserrat/Montserrat-ExtraBold.otf);
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 .main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -48,6 +52,7 @@
   -webkit-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.445);
           box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.445);
   position: fixed;
+  z-index: 2;
 }
 
 .logo {
@@ -94,11 +99,139 @@
   width: 100%;
   height: 50px;
   background-color: #ffcc00;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: scroll;
+}
+
+.leaf {
+  width: 15px;
+  height: 30px;
+  background-image: url(../img/olive-logo-redesign_0002_Layer-4.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 25px;
+}
+
+.rate-scroll {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -webkit-animation: scrolling 20s linear infinite;
+          animation: scrolling 20s linear infinite;
+}
+
+@-webkit-keyframes scrolling {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  50% {
+    -webkit-transform: translateX(-350px);
+            transform: translateX(-350px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes scrolling {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  50% {
+    -webkit-transform: translateX(-350px);
+            transform: translateX(-350px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+.company-name, .daily-fx,
+.order-now {
+  width: 230px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.company-name p, .daily-fx p, .order-now p {
+  margin: auto;
+  color: #4d4d4d;
+  font-family: box3;
+}
+
+.company-name h4, .daily-fx h4, .order-now h4 {
+  margin: auto;
+  color: #4d4d4d;
+  font-family: box4;
+}
+
+.daily-fx {
+  width: 200px;
+  margin-right: 20px;
+}
+
+.order-now {
+  width: 130px;
+}
+
+.buy, .sell,
+.buy1 {
+  padding: 3px 10px;
+  background-color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 30px;
+}
+
+.buy p, .sell p, .buy1 p {
+  color: #fff;
+  margin: auto;
+  font-family: box3;
+}
+
+.buy1 {
+  margin-left: 0px;
+}
+
+.usd,
+.gbp,
+.euro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 30px;
+}
+
+.usd p,
+.gbp p,
+.euro p {
+  color: #4d4d4d;
+  margin: auto;
+  font-family: box3;
+}
+
+.usd-buy-value,
+.gbp-buy-value,
+.euro-buy-value {
+  margin: auto;
+  margin-left: 8px;
+  color: red;
+  font-family: box1;
 }
 
 .pics {
   width: 100%;
-  height: 60vh;
+  padding: 125px 0px;
   background-image: url(../img/banner.jpg), -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.507)), color-stop(rgba(0, 0, 0, 0.4)), to(rgba(255, 255, 255, 0)));
   background-image: url(../img/banner.jpg), linear-gradient(to right, rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.4), rgba(255, 255, 255, 0));
   background-color: #4d4d4d;
@@ -275,7 +408,7 @@
 .yellow-box {
   background-color: #ffcc00;
   width: 100%;
-  height: 50px;
+  height: 20px;
 }
 
 .about-txt-cont {
@@ -295,6 +428,62 @@
   font-family: serif;
   font-family: box4;
   color: #4d4d4d;
+}
+
+.metrics {
+  width: 100%;
+  padding: 100px 0px;
+  background-color: #ffcc00;
+  margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.aot,
+.not,
+.cs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto 100px;
+}
+
+.aot-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.aot-div p {
+  margin: auto;
+  font-size: 40pt;
+  font-family: box3;
+  color: #4d4d4d;
+  margin-bottom: 20px;
+}
+
+.aot-div,
+.aot-txt-div {
+  margin: auto;
+}
+
+.aot-txt-div {
+  width: 120px;
+  margin-left: 20px;
+}
+
+.aot-txt-div p {
+  margin-top: -15px;
+  font-size: 15pt;
+  font-family: serif;
+  font-family: box3;
+  color: #fff;
 }
 
 .subscribe {
@@ -349,6 +538,99 @@
 
 .footer {
   background-color: #ddd;
-  height: 250px;
+  padding: 50px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.address {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.foot-logo {
+  margin: auto;
+  width: 200px;
+  height: 140px;
+  background-image: url(../img/olive-logo-redesign_0000_BUREAU-DE-CHANGE.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.s-icon, .facebook, .twitter, .instagram, .linkedin {
+  margin: auto;
+  width: 35px;
+  height: 50px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 25px;
+}
+
+.facebook {
+  background-image: url(../icons/036-facebook.png);
+  margin-left: 0px;
+}
+
+.twitter {
+  background-image: url(../icons/008-twitter.png);
+}
+
+.instagram {
+  background-image: url(../icons/029-instagram.png);
+}
+
+.linkedin {
+  background-image: url(../icons/027-linkedin.png);
+}
+
+.contact-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.contact-title p {
+  margin: auto;
+  font-size: 15pt;
+  font-family: box3;
+  color: #4d4d4d;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.email p {
+  margin: auto;
+  font-size: 10pt;
+  font-family: box1;
+  color: #4d4d4d;
+  margin-top: 20px;
 }
 /*# sourceMappingURL=styles.css.map */
