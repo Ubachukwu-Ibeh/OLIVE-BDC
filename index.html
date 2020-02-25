@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home page - Olive BDC</title>
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
@@ -15,15 +15,69 @@
                 <div class="logo"></div>
                 <div class="nav-links-div">
                     <div class="nav-link"> <a href=""> <span>ORDER</span> </a> </div>
-                    <div class="nav-link"> <a href="">ABOUT US</a> </div>
+                    <div class="nav-link"> <a href="#about-us">ABOUT US</a> </div>
                     <div class="nav-link"> <a href="">SERVICES</a> </div>
-                    <div class="nav-link"> <a href="">CONTACT US</a> </div>
-                    <div class="nav-link"> <a href="">SUBSCRIBE</a> </div>
+                    <div class="nav-link"> <a href="#footer">CONTACT US</a> </div>
+                    <div class="nav-link"> <a href="#stats">STATISTICS</a> </div>
                 </div>
             </div>
         </div>
         <div class="yellow-bar">
-
+            <div class="rate-scroll" id="rate-scroll">
+                <div class="leaf"></div>
+                <div class="company-name">
+                    <p>Olive Bureau De Change</p>
+                </div>
+                <div class="daily-fx">
+                    <h4>Daily Market FX Rates</h4>
+                </div>
+                <!-- BUY -->
+                <div class="buy1">
+                    <p>BUY</p>
+                </div>
+                <div class="usd">
+                    <p class="usd-name">USD</p>
+                    <h4 class="usd-buy-value">357</h4>
+                    <div class="curr-usd-buy-img"></div>
+                </div>
+                <div class="gbp">
+                    <p class="gbp-name">GBP</p>
+                    <h4 class="gbp-buy-value">467</h4>
+                    <div class="curr-gbp-buy-img"></div>
+                </div>
+                <div class="euro">
+                    <p class="euro-name">EURO</p>
+                    <h4 class="euro-buy-value">387</h4>
+                    <div class="curr-euro-buy-img"></div>
+                </div>
+                <!-- SEll -->
+                <div class="sell">
+                    <p>SELL</p>
+                </div>
+                <div class="usd">
+                    <p class="usd-name">USD</p>
+                    <h4 class="usd-buy-value">360</h4>
+                    <div class="curr-usd-sell-img"></div>
+                </div>
+                <div class="gbp">
+                    <p class="gbp-name">GBP</p>
+                    <h4 class="gbp-buy-value">474</h4>
+                    <div class="curr-gbp-sell-img"></div>
+                </div>
+                <div class="euro">
+                    <p class="euro-name">EURO</p>
+                    <h4 class="euro-buy-value">393</h4>
+                    <div class="curr-euro-sell-img"></div>
+                </div>
+                <div class="leaf"></div>
+                <div class="order-now">
+                    <p>ORDER NOW</p>
+                </div>
+                <div class="leaf"></div>
+                <div class="company-name">
+                    <p>Olive Bureau De Change</p>
+                </div>
+            </div>
         </div>
         <div class="pics">
             <div class="get-forex">
@@ -66,7 +120,7 @@
                         <div class="euro-flag"></div>
                     </div>
                     <p class="buy-us">• BUY : <span class="price">388.00</span></p>
-                    <p class="buy-us">• SELL : <span class="price">393.00</span></p>
+                    <p class="buy-us" id="about-us">• SELL : <span class="price">393.00</span></p>
                 </div>
             </div>
         </div>
@@ -89,9 +143,35 @@
 
 
 
-                <p>Citizen Trust is a trademark and a duly registered Venture Capital Fund Management Firm with the
+                <p id="stats">Citizen Trust is a trademark and a duly registered Venture Capital Fund Management Firm with the
                     Corporate Affairs Commission(CAC) and the Securities And Exchange Commission(SEC) in the Federal
                     Republic of Nigeria.</p>
+            </div>
+        </div>
+        <div class="metrics" id="metrics">
+            <div class="aot">
+                <div class="aot-div">
+                    <p class="aot-val" id="aot-val">1B</p>
+                </div>
+                <div class="aot-txt-div">
+                    <p class="aot-txt">Amount in Transactions</p>
+                </div>
+            </div>
+            <div class="not">
+                <div class="aot-div">
+                    <p class="not-val" id="not-val">600K</p>
+                </div>
+                <div class="aot-txt-div">
+                    <p class="not-txt">Number of Transactions</p>
+                </div>
+            </div>
+            <div class="cs">
+                <div class="aot-div">
+                    <p class="cs-val" id="cs-val">1M</p>
+                </div>
+                <div class="aot-txt-div">
+                    <p class="cs-txt">Customers Satisfied</p>
+                </div>
             </div>
         </div>
         <div class="subscribe">
@@ -106,15 +186,29 @@
                 </form>
             </div>
         </div>
-        <div class="footer">
+        <div class="footer" id="footer">
             <div class="address">
-                <div class="foot-logo"></div>
-                <div class="social-media"></div>
+                <div class="foot-logo">
+                    
+                </div>
+                <div class="social-media">
+                    <div class="facebook"></div>
+                    <div class="twitter"></div>
+                    <div class="instagram"></div>
+                    <div class="linkedin"></div>
+                </div>
             </div>
-            <div class="contact-us"></div>
+            <div class="contact-us">
+                <div class="contact-title"><p>Contact Us</p></div>
+                <div class="email"><p>mail@citizen-trust.com</p></div>
+                <div class="email"> <p> ask@citizen-trust.com</p></div>
+                <div class="email"> <p> 01 454 0063, 08099995777</p></div>
+                <div class="email"> <p> 94, Broad Street Lagos Island, Nigeria West Africa.</p></div>
+            </div>
             <div class="get-daily"></div>
         </div>
     </div>
 </body>
+<script src="./javascript/fxApi.js"></script>
 
 </html>
