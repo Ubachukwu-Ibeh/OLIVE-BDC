@@ -70,11 +70,11 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 50%;
+  width: 60%;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin-right: 2%;
+  margin-right: 1%;
 }
 
 .nav-links-div a {
@@ -537,7 +537,6 @@
 }
 
 .footer {
-  background-color: #ddd;
   padding: 50px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
