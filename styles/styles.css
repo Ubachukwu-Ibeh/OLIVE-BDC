@@ -28,6 +28,11 @@
   src: url(../fonts/Monserrat/Montserrat-ExtraBold.otf);
 }
 
+@font-face {
+  font-family: box5;
+  src: url(../fonts/Roboto/Roboto-Bold.ttf);
+}
+
 ::-webkit-scrollbar {
   display: none;
 }
@@ -44,7 +49,7 @@
 
 .nav {
   width: 100%;
-  height: 100px;
+  height: 80px;
   background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -95,7 +100,7 @@
 }
 
 .yellow-bar {
-  margin-top: 100px;
+  margin-top: 80px;
   width: 100%;
   height: 50px;
   background-color: #ffcc00;
@@ -229,7 +234,7 @@
   font-family: box1;
 }
 
-.pics {
+.pics, .order-page-pics {
   width: 100%;
   padding: 125px 0px;
   background-image: url(../img/banner.jpg), -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.507)), color-stop(rgba(0, 0, 0, 0.4)), to(rgba(255, 255, 255, 0)));
@@ -245,6 +250,222 @@
   border-bottom: solid #ffcc00 3px;
 }
 
+.order-page-pics {
+  background-image: url(../img/woman-in-red-dress-using-laptop-on-table-1112796.jpg), -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.507)), color-stop(rgba(0, 0, 0, 0.4)), to(rgba(255, 255, 255, 0)));
+  background-image: url(../img/woman-in-red-dress-using-laptop-on-table-1112796.jpg), linear-gradient(to right, rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.4), rgba(255, 255, 255, 0));
+  padding: 150px 0px;
+}
+
+.order-page-pics p {
+  font-size: 30pt;
+}
+
+.order-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+  margin-top: 50px;
+  width: 75%;
+}
+
+.fill-out {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #ffcc00;
+  padding: 20px;
+}
+
+.fill-out p {
+  margin: auto;
+  margin-left: 10px;
+  font-family: box2;
+  color: #4d4d4d;
+  font-size: 16pt;
+}
+
+.cc-msg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cc-msg p {
+  margin-top: 20px;
+  margin-left: 30px;
+  font-family: box1;
+  color: #4d4d4d;
+}
+
+.act-form {
+  margin: auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.first-f-sec {
+  margin: auto;
+  margin-top: 30px;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.first-f-sec div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 45%;
+  margin: auto;
+}
+
+.first-f-sec div label {
+  font-family: box3;
+  margin-bottom: 5px;
+  color: #4d4d4d;
+}
+
+.first-f-sec input {
+  margin: auto;
+  width: 100%;
+  height: 30px;
+  padding-left: 10px;
+}
+
+.first-f-sec i {
+  font-family: box4;
+  font-size: 10pt;
+}
+
+.first-f-sec2 {
+  margin: auto;
+  margin-top: 30px;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.first-f-sec2 div {
+  width: 45%;
+  margin: auto;
+}
+
+.red-asterix {
+  color: red;
+}
+
+.sec-f-sec, .sec-f-sec2 {
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sec-f-sec p, .sec-f-sec2 p {
+  margin: auto;
+  font-family: box4;
+  color: #4d4d4d;
+  font-size: 10pt;
+  margin-left: 10px;
+}
+
+.sec-f-sec input, .sec-f-sec2 input {
+  margin: auto;
+}
+
+.sec-f-sec2 {
+  margin-top: 30px;
+}
+
+.exchange {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  margin-left: 2.5%;
+}
+
+.trd-f-sec {
+  margin: auto;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.transact {
+  margin: auto;
+  margin-top: 30px;
+  margin-left: 2.5%;
+}
+
+.transact p {
+  font-family: box1;
+  color: #4d4d4d;
+  font-size: 10pt;
+}
+
+.transact2 {
+  margin-top: 30px;
+  margin-left: 2.5%;
+}
+
+.transact2 p {
+  font-family: box5;
+  color: #4d4d4d;
+  font-size: 14pt;
+}
+
+.txt-space {
+  margin: 30px auto;
+  width: 45%;
+  background-color: #aaa;
+}
+
+.submit {
+  background-color: #ffcc00;
+  border: none;
+  margin: auto;
+  width: 100%;
+  height: 50px;
+  color: #4d4d4d;
+  font-family: box3;
+  font-size: 12pt;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.submit:hover {
+  cursor: pointer;
+  color: #ffcc00;
+  background-color: #4d4d4d;
+}
+
 .get-forex {
   width: 40%;
   margin: auto;
@@ -258,7 +479,7 @@
 .get-note {
   color: #fff;
   font-family: box2;
-  font-size: 22pt;
+  font-size: 30pt;
 }
 
 .get-button {
@@ -294,7 +515,7 @@
 
 .current-ll {
   margin: auto;
-  margin-top: 70px;
+  margin-top: 50px;
   border-bottom: #ffcc00 3px solid;
   text-align: center;
 }
@@ -425,7 +646,6 @@
 }
 
 .about-txt-cont p {
-  font-family: serif;
   font-family: box4;
   color: #4d4d4d;
 }
@@ -451,7 +671,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: auto 100px;
+  margin: auto 20px;
 }
 
 .aot-div {
@@ -474,8 +694,8 @@
 }
 
 .aot-txt-div {
-  width: 120px;
-  margin-left: 20px;
+  width: 140px;
+  margin-left: 10px;
 }
 
 .aot-txt-div p {
@@ -575,7 +795,10 @@
   display: flex;
 }
 
-.s-icon, .facebook, .twitter, .instagram, .linkedin {
+.s-icon, .facebook,
+.twitter,
+.instagram,
+.linkedin {
   margin: auto;
   width: 35px;
   height: 50px;
