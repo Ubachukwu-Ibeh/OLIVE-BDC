@@ -37,6 +37,12 @@
   display: none;
 }
 
+u {
+  padding-bottom: 5px;
+  text-decoration: none;
+  border-bottom: 3px solid #ffcc00;
+}
+
 .main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -234,7 +240,7 @@
   font-family: box1;
 }
 
-.pics, .order-page-pics {
+.pics, .order-page-pics, .about-pics, .services-pics {
   width: 100%;
   padding: 125px 0px;
   background-image: url(../img/banner.jpg), -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.507)), color-stop(rgba(0, 0, 0, 0.4)), to(rgba(255, 255, 255, 0)));
@@ -257,6 +263,27 @@
 }
 
 .order-page-pics p {
+  font-size: 30pt;
+}
+
+.about-pics {
+  background-image: url(../img/man-using-laptop-3360204.jpg), -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.507)), color-stop(rgba(0, 0, 0, 0.4)), to(rgba(255, 255, 255, 0)));
+  background-image: url(../img/man-using-laptop-3360204.jpg), linear-gradient(to right, rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.4), rgba(255, 255, 255, 0));
+  padding: 150px 0px;
+}
+
+.about-pics p {
+  font-size: 30pt;
+}
+
+.services-pics {
+  background-image: url(../img/woman-writing-on-her-notebook-3059747.jpg), -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.507)), color-stop(rgba(0, 0, 0, 0.4)), to(rgba(255, 255, 255, 0)));
+  background-image: url(../img/woman-writing-on-her-notebook-3059747.jpg), linear-gradient(to right, rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.4), rgba(255, 255, 255, 0));
+  padding: 150px 0px;
+  background-position: bottom;
+}
+
+.services-pics p {
   font-size: 30pt;
 }
 
@@ -444,7 +471,6 @@
 .txt-space {
   margin: 30px auto;
   width: 45%;
-  background-color: #aaa;
 }
 
 .submit {
@@ -735,6 +761,7 @@
 }
 
 .newsletter-form {
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -742,9 +769,13 @@
 
 .sub-mail-main {
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .sub-mail-main button {
+  margin: auto;
   padding: 20px 40px;
   border: none;
   background-color: #ffcc00;
@@ -766,6 +797,11 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.foot-yellow {
+  height: 20px;
+  background-color: #4d4d4d;
 }
 
 .address {
