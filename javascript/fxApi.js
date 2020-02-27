@@ -8,7 +8,7 @@
 //     })
 const metrics = document.getElementById('metrics');
 const ACTION = () => {
-    if (window.pageYOffset > 1150 && window.pageYOffset < 1250) {
+    if (window.pageYOffset > 550 && window.pageYOffset < 600) {
         const aotVal = document.getElementById('aot-val');
         const notVal = document.getElementById('not-val');
         const csVal = document.getElementById('cs-val');
